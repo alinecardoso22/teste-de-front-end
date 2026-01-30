@@ -1,4 +1,4 @@
-.categories { 
+#categories { 
     margin-top: 39px;
     margin-bottom: 90px;
 }
@@ -157,13 +157,14 @@
 .products img { 
     width: 100%;
     height: 228px;
-    object-fit: contain;
-    display: block;
+    margin-bottom: 18px ;
+    margin-top: 32px;
 }
 
 .products p:nth-of-type(1) { 
     font-size: 15px;
     color: #3f3f40;
+    line-height: 18px;
 
 }
 
@@ -171,22 +172,26 @@
     font-size: 16px;
     color: #808080;
     text-decoration: line-through;
+    margin-bottom: 2px ;
 }
 
 .products p:nth-of-type(3) { 
     font-size:20px;
     color: #3f3f40;
     font-weight: 700;
+    margin-bottom: 2px ;
 }
 
 .products p:nth-of-type(4) { 
     font-size: 12px;
     color: #3f3f40;
+    margin-bottom: 7px ;
 }
 
 .products p:nth-of-type(5) { 
     font-size: 12px;
     color: #3442b5;
+    margin-bottom: 12px ;
 }
 
 .shop { 
@@ -233,6 +238,8 @@
     border-radius: 8px;
     font-size:14px;
     color: #161615;
+    padding: 15px 40px 15px 40px;
+
 }
 
 .name , .email {
@@ -264,13 +271,100 @@
     border: 1px solid #bdbdbd;
     font-size: 16px;
     color: #3b3b3b;
+    margin-top: 4px;
     margin-bottom: 24px;
 
 }
 
-total_tags { 
+.total_tags { 
     display: flex;
     justify-content: center;
     gap: 0;
+}
+
+.list_header a {
+    text-decoration: none;
+    color: #9f9f9f;
+    font-size: 12px ;
+    height: 18px;
+    
+}
+
+.list_header{ 
+    display: flex;
+    gap: 91px;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 69px 11px 69px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12);
+}
+
+.safe, .safe_2{ 
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.safe img, .safe_2 img { 
+    height: 20px;
+    width: auto;
+}
+
+.safe span:nth-of-type(1), .safe_2 span:nth-of-type(2){
+    font-size: 12px;
+    color: #9f9f9f;
+    height: 20px;
+    width: auto;
+    
+}
+
+.safe span:nth-of-type(2), .safe_2 span:nth-of-type(1){
+    font-size: 12px;
+    color: #3442b5;
+    height: 20px;
+    width: auto;
+}
+
+.header{ 
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 119px;
+}
+
+header { 
+    margin: 0px 80px 0px 80px;
+    
+}
+
+.thumbnails{ 
+    height: 32px ;
+    width: auto;
+    gap: 32px;
+}
+
+.header_2 { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.logo_header { 
+    height:41.3px ;
+    width: auto;
+}
+
+.navegation { 
+    font-size:14px ;
+    background-color:#f6f5f2 ;
+    color: #9f9f9f;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 48px;
+
 }
 
