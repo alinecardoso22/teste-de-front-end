@@ -42,15 +42,18 @@
                 <img src="/img/Group 35.svg" alt="logo econverse">
             </div>
 
-            <div>
+            <div class="search_bar">
                 <input type="text" class="navegation" placeholder ="O que vc está procurando?">
+                <button type="submit" class="search">
+                    <img src="/img/MagnifyingGlass.svg" alt="Buscar">
+                </button>
             </div>
 
             <div class="thumbnails">
-                <img src="/img/Group.svg" alt ="?">
-                <img src="/img/Heart.svg" alt ="Favoritos">
-                <img src="/img/UserCircle.svg" alt ="Perfil">
-                <img src="/img/ShoppingCart.svg" alt ="Carrinho de compras">
+                <img src="/img/Group.svg" class="store_icon" alt ="store">
+                <img src="/img/Heart.svg" class="icon" alt="Favoritos">
+                <img src="/img/UserCircle.svg" class="icon"alt ="Perfil">
+                <img src="/img/ShoppingCart.svg" class ="icon" alt ="Carrinho de compras">
             </div>
 
         </section>
@@ -61,15 +64,26 @@
             <a href="#" > LIVROS </a>
             <a href="#" > MODA </a>
             <a href="#" >LANÇMENTOS</a>
-            <a href="#" > OFERTAS DO DIA</a>
-            <a href="footer" > ASSINATURA</a>
+            <a href="#sale" > OFERTAS DO DIA</a>
+            <a href="#footer" class="premium">
+                <img src="/img/CrownSimple.svg" alt="Assinatura">
+                ASSINATURA
+            </a>
         </section>
 
     </header>
 
-    <section> 
+    <section class="sale"> 
         <img src="/img/Rectangle 250.svg"> 
+
+        <div class="sale_text">
+         <h2>Venha conhecer nossas promoções</h2>
+         <span> 50% Off </span>
+         <span> nos produtos</span>
+         <a href="#see_all"> Ver produtos </a>
+        </div>
     </section>
+
 
     <section id="categories"> 
         <div class="container_categories">
@@ -230,7 +244,7 @@
     
     <section class="vitrini"> 
         <h1> Produtos relacionados </h1>
-        <p> Ver todos </p>
+        <p id="see_all"> Ver todos </p>
 
         <div class="related_products">
             
