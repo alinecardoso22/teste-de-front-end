@@ -1,73 +1,96 @@
-# React + TypeScript + Vite
+# Ecoverse - Desafio Projeto Frontend Estagio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto de e-commerce desenvolvido com **React**, **TypeScript** e **Vite**. Inclui gerenciamento de produtos, carrossel interativo, modal de produtos e sistema de compras.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Node.js** (versão 16 ou superior)
+- **npm** ou **yarn**
 
-## React Compiler
+## Instalação
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Clone ou entre no diretório do projeto:**
+   ```bash
+   cd vite-project
+   ```
 
-## Expanding the ESLint configuration
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Executar o Projeto
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Modo de Desenvolvimento
+Para executar o projeto em modo de desenvolvimento com HMR (Hot Module Replacement):
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+O projeto será executado em `http://localhost:5173` (ou outra porta se a 5173 estiver em uso).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Estrutura do Projeto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+vite-project/
+├── src/
+│   ├── App.tsx         # Componente principal
+│   ├── App.css         # Estilos globais
+│   ├── main.tsx        # Ponto de entrada
+│   └── index.css       # Estilos padrão
+├── public/
+│   └── img/            # Imagens do projeto
+├── index.html          # Arquivo HTML principal
+├── script.js           # Gerenciador de produtos
+├── produtos.json       # Banco de dados de produtos
+├── package.json        # Dependências
+├── vite.config.ts      # Configuração Vite
+└── tsconfig.json       # Configuração TypeScript
+```
+
+## Principais Funcionalidades
+
+- **Carrossel de Produtos** - Sistema de navegação entre carrosséis
+- **Modal de Produtos** - Visualização detalhada com seletor de quantidade
+- **Formatação de Preços** - Valores em Real (R$)
+- **Design Responsivo** - Adaptado para mobile e desktop
+- **Font Poppins** - Tipografia moderna importada do Google Fonts
+
+## Dependências Principais
+
+- **react** (^19.2.0) - Biblioteca UI
+- **react-dom** (^19.2.0) - Renderização React
+- **vite** (^7.2.4) - Build tool
+- **typescript** (~5.9.3) - Linguagem tipada
+- **eslint** (^9.39.1) - Verificação de código
+
+## API de Produtos
+
+O arquivo `produtos.json` contém a estrutura de produtos com:
+- `productName` - Nome do produto
+- `descriptionShort` - Descrição curta
+- `price` - Preço do produto
+- `photo` - URL da imagem
+
+## Responsividade
+
+O projeto é responsivo e se adapta para:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (até 767px)
+
+## Tecnologias Utilizadas
+
+- React 19
+- TypeScript
+- Vite
+- CSS3
+- JavaScript Vanilla (ProductManager)
+- ESLint
+
+## Sobre o projeto
+
+De acordo com as instruções enviadas, seria necessário realizar o código em React e TypeScript com HTML semântico, mas desenvolvi o projeto conforme o meu aprendizado e conhecimento, ficaria agradecida em receber feedbacks de como melhorar o código e estudos necessários para realiza-lo de maneira adequada.
+
+Desde já, agradeço a atenção e fico no aguardo!!
